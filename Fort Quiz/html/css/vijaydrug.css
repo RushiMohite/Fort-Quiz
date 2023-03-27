@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "futura pt", sans;
+  }
+  /* header css start*/
+  body {
+      margin: 0;
+      padding: 0;
+      height: 1500px;
+  }
+  .header-fixed {
+      background-color:#292c2f;
+      box-shadow:0 1px 1px #ccc;
+      padding: 20px 40px;
+      height: 80px;
+      color: #ffffff;
+      box-sizing: border-box;
+      top:-100px;
+  
+      -webkit-transition:top 0.3s;
+      transition:top 0.3s;
+  }
+  
+  .header-fixed .header-limiter {
+      max-width: 1200px;
+      text-align: center;
+      margin: 0 auto;
+  }
+  
+  /*	The header placeholder. It is displayed when the header is fixed to the top of the
+      browser window, in order to prevent the content of the page from jumping up. */
+  
+  .header-fixed-placeholder{
+      height: 80px;
+      display: none;
+  }
+  
+  /* Logo */
+  
+  .header-fixed .header-limiter h1 {
+      float: left;
+      font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+      line-height: 40px;
+      margin: 0;
+  }
+  
+  .header-fixed .header-limiter h1 span {
+      color: #5383d3;
+  }
+  
+  /* The navigation links */
+  
+  .header-fixed .header-limiter a {
+      color: #ffffff;
+      text-decoration: none;
+  }
+  
+  .header-fixed .header-limiter nav {
+      font:16px Arial, Helvetica, sans-serif;
+      line-height: 40px;
+      float: right;
+  }
+  
+  .header-fixed .header-limiter nav a{
+      display: inline-block;
+      padding: 0 5px;
+      text-decoration:none;
+      color: #ffffff;
+      opacity: 0.9;
+  }
+  
+  .header-fixed .header-limiter nav a:hover{
+      opacity: 1;
+  }
+  
+  .header-fixed .header-limiter nav a.selected {
+      color: #608bd2;
+      pointer-events: none;
+      opacity: 1;
+  }
+  
+  /* Fixed version of the header */
+  
+  body.fixed .header-fixed {
+      padding: 10px 40px;
+      height: 50px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+  }
+  
+  body.fixed .header-fixed-placeholder {
+      display: block;
+  }
+  
+  body.fixed .header-fixed .header-limiter h1 {
+      font-size: 24px;
+      line-height: 30px;
+  }
+  
+  body.fixed .header-fixed .header-limiter nav {
+      line-height: 28px;
+      font-size: 13px;
+  }
+  
+  
+  /* Making the header responsive */
+  
+  @media all and (max-width: 600px) {
+  
+      .header-fixed {
+          padding: 20px 0;
+          height: 75px;
+      }
+  
+      .header-fixed .header-limiter h1 {
+          float: none;
+          margin: -8px 0 10px;
+          text-align: center;
+          font-size: 24px;
+          line-height: 1;
+      }
+  
+      .header-fixed .header-limiter nav {
+          line-height: 1;
+          float:none;
+      }
+  
+      .header-fixed .header-limiter nav a {
+          font-size: 13px;
+      }
+  
+      body.fixed .header-fixed {
+          display: none;
+      }
+  
+  }
+  
+  /*
+       We are clearing the body's margin and padding, so that the header fits properly.
+       We are also adding a height to demonstrate the scrolling behavior. You can remove
+       these styles.
+   */
+  
+  /* body {
+      margin: 0;
+      padding: 0;
+      height: 1500px;
+  } */
+  /* header css end */
+
+    /* Google transaltor css start */
+.goog-te-gadget {
+  font-family: arial;
+  font-size: 11px;
+  color: #666;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.goog-te-combo {
+  margin-left: 4px;
+  margin-right: 30px;
+  vertical-align: baseline;
+}
+/* Google transaltor css end */
+  
+  .drybn-blog .drybn-blog__overlay {
+    position: relative;
+  }
+  .drybn-blog .blog-header-image {
+    /* raigad fort background img */
+    background-image: url("https://e0.pxfuel.com/wallpapers/361/277/desktop-wallpaper-appa-jadhav-on-rajgad-fort-fort-graphy-studio-background-landscape-scenery-raigad-fort.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 320px;
+    z-index: 2;
+  }
+  .drybn-blog .blog-header-image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    background: linear-gradient(180deg, rgba(190, 167, 168, 0.6) 0%, #d4b5b5 100%);
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .drybn-blog .drybn-blog__content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    max-width: 860px;
+    z-index: 2;
+  }
+  .drybn-blog .blog-header {
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-header {
+      width: calc(100% - 4rem);
+    }
+  }
+  .drybn-blog .blog-body {
+    position: relative;
+    width: calc(100% - 2rem);
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1rem;
+    z-index: 1;
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body {
+      border-radius: 1rem;
+      width: calc(100% - 20rem);
+      padding: 4rem 8rem;
+      box-shadow: -7px 0 7px -7px #999, 7px 0 7px -7px #999;
+    }
+  }
+  .drybn-blog .blog-body .featured-image,
+  .drybn-blog .blog-body .featured-image--right {
+    display: block;
+    width: 100%;
+    height: 260px;
+    border-radius: 1rem;
+    position: relative;
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body .featured-image,
+  .drybn-blog .blog-body .featured-image--right {
+      width: 240px;
+      height: 260px;
+      float: right;
+      /* USUALLY CSS SIN BUT VALID IN THIS CASE */
+    }
+  }
+  .drybn-blog .blog-body .featured-image img,
+  .drybn-blog .blog-body .featured-image--right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body .featured-image img,
+  .drybn-blog .blog-body .featured-image--right img {
+      width: 360px;
+      height: 260px;
+      position: absolute;
+      left: 30px;
+    }
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body .featured-image--left {
+      float: left;
+      /* USUALLY CSS SIN BUT VALID IN THIS CASE */
+    }
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body .featured-image--left img {
+      width: 360px;
+      height: 260px;
+      position: absolute;
+      right: 30px;
+      left: unset;
+    }
+  }
+  .drybn-blog .blog-body {
+    position: relative;
+    width: calc(100% - 2rem);
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1rem;
+    z-index: 1;
+  }
+  @media only screen and (min-width: 760px) {
+    .drybn-blog .blog-body {
+      border-radius: 1rem;
+      width: calc(100% - 20rem);
+      padding: 4rem 8rem;
+      box-shadow: -7px -2px 7px -7px #999, 7px -2px 7px -7px #999;
+    }
+  }
+  
+  .drybn-social-list {
+    margin: 5rem auto;
+  }
+  .drybn-social-list h3 {
+    text-align: center;
+  }
+  .drybn-social-list .social-list {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Quiz</title>
+
+    <link rel="stylesheet" href="/html/css/quizcss2.css" type="text/css">
+    <link rel="stylesheet" href="/html/css/quizcss1.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+
+    <section class="header2">
+      <nav>
+        <!-- <a href="index.html"><img src="static/img/logo.png"></a> -->
+
+        <div class="nav-links">
+            <ul>
+              <li> <a href="/logout">LOG OUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+        <div class="dashbord">
+            <ul>
+              <button class="btn"><a href="/addquiz">Add Quiz</a></button>
+              <button class="btn"> <a href="/deletequiz">Delete Quiz</a></button>
+              <button class="btn"><a href="/updatequiz">Update Quiz</a></button>
+              <button class="btn"><a href="/resultquiz">Result</a></button>
+              <!-- <button class="btn"><a href="/transacDashboard">Transaction List</a></button> -->
+              </ul>
+         </div>
+
+
+      <!-- Form Section -->
+        
+      <section class="form-section">
+
+        <section class="form-title">
+            <strong>Add Quiz</strong> 
+        </section>
+
+        <section class="form-content">
+
+            <section class="form1">
+                <form action="{{ url_for('addquiz')}}" method="POST">
+
+                      
+                  <div class="input-box">
+                    <label class="label">Question No</label>
+                    <input class="form-data" type="text" name="book_id" required="required" placeholder="Enter Question ">
+                  </div>
+
+                        <div class="input-box">
+                          <label class="label">Option (A)</label>
+                          <input class="form-data" type="text" name="option (A)" required="required" placeholder="Enter Option (A)">
+                        </div>
+
+                        <div class="input-box">
+                          <label class="label">Option (B)</label>
+                          <input class="form-data" type="number"  name="option (B)" required="required" placeholder="Enter Option (B)">
+                        </div>
+
+                        <div class="input-box">
+                            <label class="label">Option (C)</label>
+                            <input class="form-data" type="text"  name="Option (C)" required="required" placeholder="Enter Option (C)">
+                          </div>
+
+                          <div class="input-box">
+                            <label class="label">Option (D)</label>
+                            <input class="form-data" type="text" name="Option (D)" required="required" placeholder="Enter Option (D)">
+                          </div>
+  
+                          <div class="input-box">
+                            <label class="label">Correct Answer</label>
+                            <input class="form-data" type="number" name="price" required="required" placeholder="Enter Correct Answer">
+                          </div>
+        
+                      <input type="submit" value="  Save Quiz  ">
+                  </section>
+                 </form>    
+                                                  
+            </section>
+              
+        </section>
+    
+
+    </section>
+    
+</body>
+</html>

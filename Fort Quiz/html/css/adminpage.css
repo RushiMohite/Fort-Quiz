@@ -1,0 +1,589 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+
+}
+
+body {
+    background-repeat: no-repeat;
+    font-family: 'Jost', sans-serif;
+    background-position: center;
+    background-size: cover;
+    /* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+    background-image: url("/html/photos/nature.jpg.jpg");
+}
+
+/* header css start*/
+body {
+    margin: 0;
+    padding: 0;
+    /* height: 1500px; */
+}
+
+.header-fixed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px #ccc;
+    padding: 20px 40px;
+    height: 80px;
+    color: #ffffff;
+    box-sizing: border-box;
+    top: -100px;
+
+    -webkit-transition: top 0.3s;
+    transition: top 0.3s;
+}
+
+.header-fixed .header-limiter {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+    browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder {
+    height: 80px;
+    display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+    float: left;
+    font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    margin: 0;
+}
+
+.header-fixed .header-limiter h1 span {
+    color: #5383d3;
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+    font: 16px Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    float: right;
+}
+
+.header-fixed .header-limiter nav a {
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover {
+    opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+    color: #608bd2;
+    pointer-events: none;
+    opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+    padding: 10px 40px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+    display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+    line-height: 28px;
+    font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+    .header-fixed {
+        padding: 20px 0;
+        height: 75px;
+    }
+
+    .header-fixed .header-limiter h1 {
+        float: none;
+        margin: -8px 0 10px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .header-fixed .header-limiter nav {
+        line-height: 1;
+        float: none;
+    }
+
+    .header-fixed .header-limiter nav a {
+        font-size: 13px;
+    }
+
+    body.fixed .header-fixed {
+        display: none;
+    }
+
+}
+
+/*
+     We are clearing the body's margin and padding, so that the header fits properly.
+     We are also adding a height to demonstrate the scrolling behavior. You can remove
+     these styles.
+ */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    height: 1500px;
+} */
+
+
+/* header css end */
+
+.cotn_principal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
+    /* background: #aac4bc; */
+    /* Old browsers */
+    /* background: -moz-linear-gradient(-45deg, #aac4bc 0%, #eca8a8 100%, #eed5a9 100%); */
+    /* FF3.6-15 */
+    /* background: -webkit-linear-gradient(-45deg, #aac4bc 0%, #eca8a8 100%, #eed5a9 100%); */
+    /* Chrome10-25,Safari5.1-6 */
+    /* background: linear-gradient(135deg, #aac4bc 0%, #eca8a8 100%, #eed5a9 100%); */
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cfd8dc', endColorstr='#b0bec5', GradientType=1); */
+    /* IE6-9 fallback on horizontal gradient */
+    background-repeat: no-repeat;
+    font-family: 'Jost', sans-serif;
+    background-position: center;
+    background-size: cover;
+    /* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+    background-image: url("/html/photos/nature.jpg.jpg");
+
+}
+
+
+.cont_centrar {
+    position: relative;
+    float: left;
+    width: 100%;
+
+}
+
+.cont_login {
+    position: relative;
+    width: 640px;
+    left: 50%;
+    margin-left: -320px;
+
+}
+
+.cont_back_info {
+    position: relative;
+    float: left;
+    width: 640px;
+    height: 280px;
+    overflow: hidden;
+    /* background-color: #d391e5; */
+    backdrop-filter: blur(4.5px);
+    margin-top: 100px;
+    box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.5);
+
+}
+
+.cont_forms {
+    position: absolute;
+    overflow: hidden;
+    top: 100px;
+    left: 0px;
+    width: 320px;
+    height: 280px;
+    /* background-color: #92d6db; */
+    backdrop-filter: blur(4.5px);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+.cont_forms_active_login {
+    box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.5);
+    height: 420px;
+    top: 20px;
+    left: 0px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+.cont_forms_active_sign_up {
+    box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.5);
+    height: 420px;
+    top: 20px;
+    left: 320px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.cont_img_back_grey {
+    position: absolute;
+    width: 950px;
+    top: -80px;
+    left: -116px;
+}
+
+.cont_img_back_grey>img {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.2;
+    animation-name: animar_fondo;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.cont_img_back_ {
+    position: absolute;
+    width: 950px;
+    top: -80px;
+    left: -116px;
+}
+
+.cont_img_back_>img {
+    width: 100%;
+    opacity: 0.3;
+    animation-name: animar_fondo;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.cont_forms_active_login>.cont_img_back_ {
+    top: 0px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.cont_forms_active_sign_up>.cont_img_back_ {
+    top: 0px;
+    left: -435px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+.cont_info_log_sign_up {
+    position: absolute;
+    width: 640px;
+    height: 280px;
+    top: 100px;
+    z-index: 1;
+    backdrop-filter: blur(4.5px);
+}
+
+.col_md_login {
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.col_md_login>h2 {
+    font-weight: 400;
+    margin-top: 70px;
+    color: #757575;
+}
+
+.col_md_login>p {
+    font-weight: 400;
+    margin-top: 15px;
+    width: 80%;
+    color: #37474F;
+}
+
+.btn_login {
+    background-color: #FF9800;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 1px 5px 20px -5px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.col_md_sign_up {
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.cont_ba_opcitiy>h2 {
+    font-weight: 400;
+    color: #fff;
+}
+
+.cont_ba_opcitiy>p {
+    font-weight: 400;
+    margin-top: 15px;
+    color: #fff;
+}
+
+/* ----------------------------------
+  background text    
+  ------------------------------------
+   */
+.cont_ba_opcitiy {
+    position: relative;
+    background-color: rgba(187, 168, 170, 0.79);
+    width: 80%;
+    border-radius: 3px;
+    margin-top: 60px;
+    padding: 15px 0px;
+}
+
+.btn_sign_up {
+    background-color: #f44336;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 1px 5px 20px -5px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cont_forms_active_sign_up {
+    z-index: 2;
+}
+
+
+@-webkit-keyframes animar_fondo {
+    from {
+        -webkit-transform: scale(1) translate(0px);
+        -moz-transform: scale(1) translate(0px);
+        -ms-transform: scale(1) translate(0px);
+        -o-transform: scale(1) translate(0px);
+        transform: scale(1) translate(0px);
+    }
+
+    to {
+        -webkit-transform: scale(1.5) translate(50px);
+        -moz-transform: scale(1.5) translate(50px);
+        -ms-transform: scale(1.5) translate(50px);
+        -o-transform: scale(1.5) translate(50px);
+        transform: scale(1.5) translate(50px);
+    }
+}
+
+@-o-keyframes identifier {
+    from {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+}
+
+@-moz-keyframes identifier {
+    from {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+}
+
+@keyframes identifier {
+    from {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}
+
+.cont_form_login {
+    position: absolute;
+    opacity: 0;
+    display: none;
+    width: 320px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.cont_forms_active_login {
+    z-index: 2;
+}
+
+/* .cont_forms_active_login  >.cont_form_login {
+  } */
+
+.cont_form_sign_up {
+    position: absolute;
+    width: 320px;
+    float: left;
+    opacity: 0;
+    display: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+.cont_form_sign_up>input {
+    text-align: left;
+    padding: 15px 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 260px;
+    border: none;
+    color: #757575;
+}
+
+.cont_form_sign_up>h2 {
+    margin-top: 50px;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+.cont_form_login>input {
+    padding: 15px 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 260px;
+    border: none;
+    text-align: left;
+    color: #000000;
+}
+
+.cont_form_login>h2 {
+    margin-top: 110px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.cont_form_login>a,
+.cont_form_sign_up>a {
+    color: #757575;
+    position: relative;
+    float: left;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+/* footer css  */
+
+.copyright-area{
+    background: #202020;
+    padding: 25px 0;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    /* background: #6cf; */
+  }
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+    text-align: center;
+  }
+  .copyright-text p a{
+    color: #ff5e14;
+  }
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+    color: #ff5e14;
+  }
+  .footer-menu li a {
+    font-size: 14px;
+    color: #878787;
+    
+  }
